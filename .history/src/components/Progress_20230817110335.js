@@ -1,0 +1,17 @@
+import React from "react";
+
+const Progress = ({ index, numQuestions, points,maxP }) => {
+  return (
+    <header className="progress">
+      <p>
+        Question <strong>{index + 1}</strong> /{numQuestions}
+      </p>
+
+      <p>
+        <strong>{points}</strong> / X{" "}
+      </p>
+    </header>
+  );
+};
+
+export default Progress;
